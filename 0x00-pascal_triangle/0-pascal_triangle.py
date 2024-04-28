@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 """
-Returns the first n rows of Pascal's triangle as a list of lists.
+Returns a list of lists representing the first n rows of Pascal's triangle.
 
-n: number of rows of Pascal's triangle to return
+Args:
+    n (int): The number of rows of Pascal's triangle to return.
+
+Returns:
+    list: A list of lists representing the first n rows of Pascal's triangle.
 """
 def pascal_triangle(n):
     if n <= 0:
