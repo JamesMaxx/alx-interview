@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-def pascal_triangle(n):
-    """
-    Returns the first n rows of Pascal's triangle as a list of lists.
+"""
+Returns the first n rows of Pascal's triangle as a list of lists.
 
-    n: number of rows of Pascal's triangle to return
-    """
+n: number of rows of Pascal's triangle to return
+"""
+def pascal_triangle(n):
     if n <= 0:
         return []
     triangle = [[1]]  # first row of Pascal's triangle
@@ -25,3 +25,4 @@ def pascal_triangle(n):
         row.append(1)  # last element of i-th row
         triangle.append(row)
     return triangle
+
