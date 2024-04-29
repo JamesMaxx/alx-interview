@@ -17,7 +17,7 @@ def pascal_triangle(n):
         ValueError: If n is less than 1.
     """
     if n < 1:
-        raise ValueError("n must be 1 or greater.")
+        raise ValueError("n must be 0 or greater.")
 
     triangle = [[1]]
     for i in range(1, n):
