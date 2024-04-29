@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Module documentation: Generate Pascal's triangle up to the nth row.
 """
