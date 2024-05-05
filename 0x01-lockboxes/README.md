@@ -38,7 +38,3 @@ The script includes test cases to validate the functionality of the `canUnlockAl
 ## License
 
 This script is released under the [MIT License](https://opensource.org/licenses/MIT).
-
-## Author
-
-[Your Name] - [Your Email] - [Your Website or GitHub Profile]
