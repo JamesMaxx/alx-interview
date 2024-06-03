@@ -67,7 +67,7 @@ def solve_nqueens(n):
                 # Recur to place rest of the queens
                 res = solve(board, col + 1) or res
 
-                # If placing the queen in board[i][col] doesn't lead to a solution,
+                # If placing the queen in board[i][col] no solution,
                 # remove the queen from board[i][col]
                 board[i][col] = 0
 
