@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 const argv = process.argv;
 const urlFilm = 'https://swapi-api.hbtn.io/api/films/';
 const urlMovie = `${urlFilm}${argv[2]}/`;
@@ -19,14 +20,14 @@ request(urlMovie, function (error, response, body) {
   }
 });
 
-function CharRequest (idx, url, characters, limit) {
+function CharRequest(idx, url, characters, limit) {
   if (idx === limit) {
     return;
   }
   request(url, function (error, response, body) {
     if (!error) {
       const rbody = JSON.parse(body);
-      console.log(rbody.name);
+      console.log(rbody.name + '\n');
       idx++;
       CharRequest(idx, characters[idx], characters, limit);
     } else {
